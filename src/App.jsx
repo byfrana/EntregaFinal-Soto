@@ -5,7 +5,7 @@ function App() {
 	return (
 		<>
 			<Navbar />
-			<ItemListContainer mensaje={'Handmade in London since 1972.'} />
+			<ItemListContainer mensaje={'Hecho a mano en Londres desde 1972.'} />
 		</>
 	);
 }

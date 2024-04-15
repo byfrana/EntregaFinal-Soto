@@ -4,7 +4,7 @@ import CartWidget from './CartWidget';
 const Navbar = () => {
 	return (
 		<div className="container-fluid">
-			<div className="row bg-black p-3">
+			<div className="row bg-black p-3 p-b-0">
 				<div className="col"></div>
 				<div className="col text-center">
 					<a href="#">
@@ -16,21 +16,26 @@ const Navbar = () => {
 				</div>
 			</div>
 			<div className="row bg-black">
-				<div className="col text-center">
+				<div className="col text-center py-3">
 					<ul className="nav justify-content-center">
 						<li className="nav-item">
-							<a className="nav-link  link-light" href="#">
+							<a className="nav-link link-light" href="#">
 								Anillos
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link link-light" href="#">
-								Joyería
+								Aros
 							</a>
 						</li>
 						<li className="nav-item">
 							<a className="nav-link link-light" href="#">
-								Ropa
+								Colgantes
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link link-light" href="#">
+								Pulseras
 							</a>
 						</li>
 					</ul>
