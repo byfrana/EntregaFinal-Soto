@@ -1,3 +1,4 @@
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/images/logo.svg';
 import CartWidget from './CartWidget';
 
@@ -7,9 +8,9 @@ const Navbar = () => {
 			<div className="row bg-black p-3 p-b-0">
 				<div className="col"></div>
 				<div className="col text-center">
-					<a href="#">
+					<Link to={'/'}>
 						<img src={logo} alt="The Great Frog" width={280} />
-					</a>
+					</Link>
 				</div>
 				<div className="col d-flex align-items-center justify-content-end">
 					<CartWidget></CartWidget>
@@ -19,24 +20,24 @@ const Navbar = () => {
 				<div className="col text-center py-3">
 					<ul className="nav justify-content-center">
 						<li className="nav-item">
-							<a className="nav-link link-light" href="#">
+							<NavLink className="nav-link link-light" to={'/'}>
+								Inicio
+							</NavLink>
+						</li>
+						<li className="nav-item">
+							<NavLink className="nav-link link-light" to={'/category/anillos'}>
 								Anillos
-							</a>
+							</NavLink>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link link-light" href="#">
+							<NavLink className="nav-link link-light" to={'/category/aros'}>
 								Aros
-							</a>
+							</NavLink>
 						</li>
 						<li className="nav-item">
-							<a className="nav-link link-light" href="#">
+							<NavLink className="nav-link link-light" to={'/category/colgantes'}>
 								Colgantes
-							</a>
-						</li>
-						<li className="nav-item">
-							<a className="nav-link link-light" href="#">
-								Pulseras
-							</a>
+							</NavLink>
 						</li>
 					</ul>
 				</div>
